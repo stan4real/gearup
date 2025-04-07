@@ -24,7 +24,7 @@ createRoot(document.getElementById('root')!).render(
         <Routes>
           <Route element={<Layout/>}>
             <Route index element={<MainPage/>} />
-            <Route path="contact" element={<ContactPage/>} />
+            <Route path="/contact" element={<ContactPage/>} />
           </Route>
         </Routes>
       </BrowserRouter>
