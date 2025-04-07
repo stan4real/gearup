@@ -20,7 +20,7 @@ createRoot(document.getElementById('root')!).render(
       panelBackground='translucent'
     >
 
-      <HashRouter basename='/gearup'>
+      <HashRouter>
         <Routes>
           <Route element={<Layout/>}>
             <Route index element={<MainPage/>} />
