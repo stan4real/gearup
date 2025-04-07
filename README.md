@@ -1,54 +1,58 @@
-# React + TypeScript + Vite
+Project with React + Vite + TypeScript + Appwrite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a web application built using **React**, **Vite**, **TypeScript**, and **Appwrite** as the cloud backend. This modern and efficient combination of technologies provides a fast development process and reliable app performance.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** - Library for building user interfaces.
+- **Vite** - A fast bundler optimized for development.
+- **TypeScript** - Static typing for JavaScript.
+- **Appwrite** - Cloud server for managing authentication, databases, and other services.
+- **Radix UI** - A library for building accessible and highly customizable UI components.
+- **Styled Components** - A library for styling components using CSS in JavaScript.
 
-## Expanding the ESLint configuration
+## Unique Design
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This project uses a **unique design** and **logo**, specifically created for this application. All UI components have been styled using modern technologies:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **Radix UI** ensures accessibility and usability of components like modals, tooltips, dropdowns, and other UI elements.
+- **Styled Components** allows for modular and convenient styling, tying styles directly to components, ensuring good code readability and maintainability.
+
+## SEO Optimization and Accessibility
+
+This project features **SEO optimization** with a focus on improving search engine visibility and enhancing accessibility for users:
+
+- **Semantic HTML tags** — To improve SEO and accessibility, proper HTML structures are used, such as `<header>`, `<footer>`, `<main>`, `<section>`, helping search engines and users better understand the content structure.
+- **Accessibility** — Built-in accessibility features from **Radix UI** ensure that the UI components are accessible to users with disabilities.
+- **Responsiveness** — The site is fully responsive and renders correctly on various devices (mobile phones, tablets, desktops) thanks to flexible layouts and media queries.
+
+## Backend with Appwrite
+
+The backend of this application is implemented using **Appwrite**, a cloud solution for authentication, data storage, and other server-side functions. Features include:
+
+- **Appwrite Cloud Functions** — Server-side tasks (e.g., data processing, external API interactions) are handled using **cloud functions** provided by Appwrite. This allows for easy scaling without the need to maintain your own servers.
+
+## Setup and Configuration
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/stan4real/gearup.git
+cd gearup
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install dependencies
 
 ```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+npm install
 ```
+
+### 3. Set Up Appwrite
+
+1. Create an account on Appwrite.
+
+2. Set up your project in Appwrite, create necessary collections, databases, and function.
+
+3. Deploy it on git
+
+4. Configure it as you need
