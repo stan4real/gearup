@@ -4,7 +4,6 @@ import { Link, useLocation } from 'react-router'
 
 function Header() {
   const location = useLocation()
-  console.log("Location is", location)
   return (
     <styled.Header>
         <Heading as='h3'>Gear
