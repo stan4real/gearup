@@ -38,7 +38,7 @@ const accomplishmentsList = [
 const Accomplishments = () => {
   return (
     <Section py={'2'} px={{lg:'160px', md:'120px', sm:'80px', xs:'40px', initial:'15px'}}>
-        <Heading as="h2" size={"8"} mt={"2"} mb={"7"} align={"center"}>Our <span style={{color:'#29a383'}}>Accomplishments</span></Heading>
+        <Heading as="h2" size={{initial:"7", xs:"8"}} mt={"2"} mb={{initial:"-3", xs:"7"}} align={"center"}>Our <span style={{color:'#29a383'}}>Accomplishments</span></Heading>
         <Grid mt={"6"} columns={{sm:'3', xs:'2', initial:'1'}} gap="3" rows={{initial:"repeat(2, 75px)", xs:"repeat(2, 110px)"}} width="auto">
             {
                 accomplishmentsList.map(item => {

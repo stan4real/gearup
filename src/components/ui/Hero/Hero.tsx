@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, Section, Text } from "@radix-ui/themes"
-import ReactPlayer from "react-player"
+import * as styled from "./Hero.style"
 
 const Hero = () => {
   return (
@@ -10,8 +10,7 @@ const Hero = () => {
           <Text as="p" size={'3'} my={'4'}>Reliable Heavy Machinery for Your Projects – Ready When You Are</Text>
         </Box>
         <Flex width={{initial:'100%', sm:'50%'}} justify={"center"} align={"center"}>
-          <ReactPlayer
-            style={{padding:'8px', border:'1px solid gainsboro', borderRadius:'8px', maxWidth:'400px', minHeight:'150px', maxHeight:"300px"}}
+          <styled.Player
             url={'https://www.youtube.com/watch?v=dQw4w9WgXcQ'}
             height={'100%'}
             width={'100%'}
