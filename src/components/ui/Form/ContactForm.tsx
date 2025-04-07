@@ -1,6 +1,6 @@
 import { Form } from "radix-ui";
 import * as styled from "./ContactForm.style"
-import { testEx } from "../../../appwrite";
+import { sendData } from "../../../appwrite";
 import React, { useState } from "react";
 
 type ContactFormProps = {
@@ -27,7 +27,7 @@ const ContactForm = ({setHeadingState} : ContactFormProps) => {
 			requestData[key] = value
 		));
 
-		testEx(JSON.stringify(requestData)).then((response)=>{
+		sendData(JSON.stringify(requestData)).then((response)=>{
 			setIsLoading(false);
 			const reply = response.reply
 			const data = JSON.parse(response.data) 
@@ -35,6 +35,8 @@ const ContactForm = ({setHeadingState} : ContactFormProps) => {
 				isSent:true,
 				name:data.name
 			})
+
+			console.log(data)
 			console.log(reply)
 			
 			const target = e.target as HTMLFormElement

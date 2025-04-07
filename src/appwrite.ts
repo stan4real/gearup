@@ -10,7 +10,7 @@ const client = new Client()
 const functions = new Functions(client)
 
 
-export const testEx = async (data:string) => {
+export const sendData = async (data:string) => {
     const result = await functions.createExecution(
         FUNCTION_ID, data, false, '/contact', ExecutionMethod.POST
     )
