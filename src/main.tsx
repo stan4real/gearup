@@ -4,7 +4,7 @@ import './index.css'
 import "@radix-ui/themes/styles.css";
 import { Theme } from '@radix-ui/themes'
 import { HashRouter, Route, Routes } from 'react-router';
-import MainPage from './components/pages/MainPage.tsx';
+import MainPage from './components/pages/main/MainPage.tsx';
 import ContactPage from './components/pages/contact/ContactPage.tsx';
 import Layout from './components/ui/Layout/Layout.tsx';
 
