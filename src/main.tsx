@@ -20,7 +20,7 @@ createRoot(document.getElementById('root')!).render(
       panelBackground='translucent'
     >
 
-      <BrowserRouter>
+      <BrowserRouter basename='/gearup'>
         <Routes>
           <Route element={<Layout/>}>
             <Route index element={<MainPage/>} />
